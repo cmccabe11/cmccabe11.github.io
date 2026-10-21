@@ -21,9 +21,7 @@
       margin: 0 auto;
     }
 
-    h1 {
-      margin-bottom: 0;
-    }
+    h1 { margin-bottom: 0; }
 
     h2 {
       margin-top: 40px;
@@ -31,35 +29,32 @@
       padding-bottom: 8px;
     }
 
-    h3 {
-      margin-bottom: 5px;
-    }
+    h3 { margin-bottom: 5px; }
 
-    .subtitle, .details {
+    .subtitle, .details, figcaption {
       color: #666666;
     }
 
-    nav a {
-      margin-right: 18px;
+    nav a { margin-right: 18px; }
+    a { color: #2563b8; }
+
+    .project { margin-bottom: 40px; }
+
+    .project figure {
+      margin: 15px 0 0;
     }
 
-    a {
-      color: #2563b8;
-    }
-
-    .project {
-      margin-bottom: 40px;
-    }
-
-    .placeholder {
-      background: #eeeeee;
+    .project-image {
+      display: block;
+      width: 100%;
+      height: auto;
       border: 1px solid #dddddd;
-      aspect-ratio: 16 / 9;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      color: #777777;
-      margin-top: 15px;
+      box-sizing: border-box;
+    }
+
+    figcaption {
+      font-size: 0.85rem;
+      margin-top: 6px;
     }
 
     footer {
@@ -73,7 +68,6 @@
 
 <body>
   <div class="container">
-
     <header>
       <h1>Casey McCabe</h1>
       <p class="subtitle">Independent Game Developer</p>
@@ -101,12 +95,25 @@
       <div class="project">
         <h3>InfiniRetail</h3>
         <p class="details">
-          Retail Management Simulation | Godot 4
+          Retail Management Simulation | Godot 4 |
+          In Development
         </p>
 
-        <div class="placeholder">
-          InfiniRetail Screenshot
-        </div>
+        <figure>
+          <a href="infiniretail.png"
+             target="_blank"
+             rel="noopener noreferrer">
+            <img
+              class="project-image"
+              src="infiniretail.png"
+              alt="InfiniRetail showcase: operating system,
+                   store management, building mode, and world map"
+            >
+          </a>
+          <figcaption>
+            Development showcase — click to view full size.
+          </figcaption>
+        </figure>
 
         <p>
           An isometric retail management game featuring
@@ -119,12 +126,25 @@
       <div class="project">
         <h3>RUXELZ</h3>
         <p class="details">
-          Multiplayer Gaming Platform | Godot 4
+          Multiplayer Gaming Platform | Godot 4 |
+          In Development
         </p>
 
-        <div class="placeholder">
-          RUXELZ Screenshot
-        </div>
+        <figure>
+          <a href="ruxelz.png"
+             target="_blank"
+             rel="noopener noreferrer">
+            <img
+              class="project-image"
+              src="ruxelz.png"
+              alt="RUXELZ showcase: multiplayer gameplay,
+                   Studio editor, world, and website"
+            >
+          </a>
+          <figcaption>
+            Development showcase — click to view full size.
+          </figcaption>
+        </figure>
 
         <p>
           An online multiplayer platform inspired by
@@ -133,7 +153,6 @@
           and integrated development tools.
         </p>
       </div>
-
     </section>
 
     <section id="contact">
@@ -146,7 +165,6 @@
     <footer>
       <p>Casey McCabe | Game Development Portfolio</p>
     </footer>
-
   </div>
 </body>
 </html>
