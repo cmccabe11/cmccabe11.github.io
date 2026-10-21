@@ -21,7 +21,9 @@
       margin: 0 auto;
     }
 
-    h1 { margin-bottom: 0; }
+    h1 {
+      margin-bottom: 0;
+    }
 
     h2 {
       margin-top: 40px;
@@ -29,16 +31,25 @@
       padding-bottom: 8px;
     }
 
-    h3 { margin-bottom: 5px; }
+    h3 {
+      margin-bottom: 5px;
+    }
 
     .subtitle, .details, figcaption {
       color: #666666;
     }
 
-    nav a { margin-right: 18px; }
-    a { color: #2563b8; }
+    nav a {
+      margin-right: 18px;
+    }
 
-    .project { margin-bottom: 40px; }
+    a {
+      color: #2563b8;
+    }
+
+    .project {
+      margin-bottom: 40px;
+    }
 
     .project figure {
       margin: 15px 0 0;
@@ -68,6 +79,7 @@
 
 <body>
   <div class="container">
+
     <header>
       <h1>Casey McCabe</h1>
       <p class="subtitle">Independent Game Developer</p>
@@ -81,6 +93,7 @@
 
     <section id="about">
       <h2>About Me</h2>
+
       <p>
         I'm an independent game developer and college
         student interested in game systems design,
@@ -92,8 +105,10 @@
     <section id="projects">
       <h2>Projects</h2>
 
+      <!-- INFINIRETAIL -->
       <div class="project">
         <h3>InfiniRetail</h3>
+
         <p class="details">
           Retail Management Simulation | Godot 4 |
           In Development
@@ -106,10 +121,12 @@
             <img
               class="project-image"
               src="infiniretail.png"
-              alt="InfiniRetail showcase: operating system,
-                   store management, building mode, and world map"
+              alt="InfiniRetail showcase featuring the
+                   in-game operating system, store management,
+                   construction tools, and world map"
             >
           </a>
+
           <figcaption>
             Development showcase — click to view full size.
           </figcaption>
@@ -123,8 +140,10 @@
         </p>
       </div>
 
+      <!-- RUXELZ -->
       <div class="project">
         <h3>RUXELZ</h3>
+
         <p class="details">
           Multiplayer Gaming Platform | Godot 4 |
           In Development
@@ -137,10 +156,12 @@
             <img
               class="project-image"
               src="ruxelz.png"
-              alt="RUXELZ showcase: multiplayer gameplay,
-                   Studio editor, world, and website"
+              alt="RUXELZ showcase featuring multiplayer
+                   gameplay, Studio editor, player worlds,
+                   and website"
             >
           </a>
+
           <figcaption>
             Development showcase — click to view full size.
           </figcaption>
@@ -155,16 +176,50 @@
       </div>
     </section>
 
+    <!-- CONTACT -->
     <section id="contact">
       <h2>Contact</h2>
+
       <p>
-        Contact information and resume link coming soon.
+        Based in St. Louis, Missouri.
       </p>
+
+      <p>
+        Feel free to reach out regarding professional
+        opportunities or my projects.
+      </p>
+
+      <p>
+        Email:
+        <a href="mailto:cmccabe04@pm.me">
+          cmccabe04@pm.me
+        </a>
+      </p>
+
+      <p>
+        GitHub:
+        <a href="https://github.com/cmccabe11"
+           target="_blank"
+           rel="noopener noreferrer">
+          github.com/cmccabe11
+        </a>
+      </p>
+
+      <!-- Uncomment after uploading resume.pdf
+      <p>
+        <a href="resume.pdf" target="_blank">
+          Download Resume (PDF)
+        </a>
+      </p>
+      -->
     </section>
 
     <footer>
-      <p>Casey McCabe | Game Development Portfolio</p>
+      <p>
+        Casey McCabe | Game Development Portfolio
+      </p>
     </footer>
+
   </div>
 </body>
 </html>
